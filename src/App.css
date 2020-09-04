@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;900&display=swap');
+
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('./assets/mountain_background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(225,225,225,0.8);
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.blur {
+  background-color: rgba(0,0,0,0.75);
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(15px);
+}
+
+.title {
+  padding-top: 20vh;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.subtitle {
+  margin-top: 25px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.percentage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  margin-top: 25px;
+}
+
+.percentage-bar {
+  position: relative;
+  height: 15px;
+  width: 300px;
+}
+
+.percentage-bar > div {
+  border-radius: 3px;
+}
+
+.percentage-bar > div:first-child {
+  position: absolute;
+  height: 100%;
+  width: 95%;
+  background-color: rgba(247,197,72,0.7);
+  z-index: 999;
+}
+
+.percentage-bar > div:last-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(247,197,72,0.5);
+  z-index: 998;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.social-media > a > div {
+  height: 35px;
+  width: 35px;
+  margin: 0 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: .5;
+}
+
+.instagram {
+  background-image: url('./assets/instagram.png');
+  object-fit: rgba(247,197,72,0.7);
+}
+
+.github {
+  background-image: url('./assets/github.png');
+  object-fit: rgba(247,197,72,0.7);
+}
